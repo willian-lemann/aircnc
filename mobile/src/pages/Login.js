@@ -16,7 +16,8 @@ export default function Login({ navigation }) {
                 navigation.navigate('List');
             }
         })
-    }, []);
+    }, []); 
+    
     async function handleSubmit() {
         const response = await api.post('/sessions', {
             email
